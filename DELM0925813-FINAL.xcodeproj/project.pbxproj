@@ -13,6 +13,7 @@
 		DE5A63161C03B8070029A52D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5A63151C03B8070029A52D /* Images.xcassets */; };
 		DE5A63191C03B8070029A52D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5A63171C03B8070029A52D /* LaunchScreen.xib */; };
 		DE5A63251C03B8080029A52D /* DELM0925813_FINALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A63241C03B8080029A52D /* DELM0925813_FINALTests.swift */; };
+		DE6BA0A81C16291300C294CE /* bonhomme.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6BA0A71C16291300C294CE /* bonhomme.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DE5A631E1C03B8080029A52D /* DELM0925813-FINALTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DELM0925813-FINALTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5A63231C03B8080029A52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5A63241C03B8080029A52D /* DELM0925813_FINALTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELM0925813_FINALTests.swift; sourceTree = "<group>"; };
+		DE6BA0A71C16291300C294CE /* bonhomme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonhomme.png; path = ../image/bonhomme.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				DE5A63101C03B8070029A52D /* ViewController.swift */,
 				DE5A63121C03B8070029A52D /* Main.storyboard */,
 				DE5A63151C03B8070029A52D /* Images.xcassets */,
+				DE6BA0A91C16291F00C294CE /* image */,
 				DE5A63171C03B8070029A52D /* LaunchScreen.xib */,
 				DE5A630C1C03B8070029A52D /* Supporting Files */,
 			);
@@ -110,6 +113,14 @@
 				DE5A63231C03B8080029A52D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE6BA0A91C16291F00C294CE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				DE6BA0A71C16291300C294CE /* bonhomme.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6BA0A81C16291300C294CE /* bonhomme.png in Resources */,
 				DE5A63141C03B8070029A52D /* Main.storyboard in Resources */,
 				DE5A63191C03B8070029A52D /* LaunchScreen.xib in Resources */,
 				DE5A63161C03B8070029A52D /* Images.xcassets in Resources */,
@@ -409,6 +421,7 @@
 				DE5A632A1C03B8080029A52D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE5A632B1C03B8080029A52D /* Build configuration list for PBXNativeTarget "DELM0925813-FINALTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				DE5A632D1C03B8080029A52D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
