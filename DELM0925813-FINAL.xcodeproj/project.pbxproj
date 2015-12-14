@@ -14,6 +14,8 @@
 		DE5A63191C03B8070029A52D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5A63171C03B8070029A52D /* LaunchScreen.xib */; };
 		DE5A63251C03B8080029A52D /* DELM0925813_FINALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A63241C03B8080029A52D /* DELM0925813_FINALTests.swift */; };
 		DE6BA0A81C16291300C294CE /* bonhomme.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6BA0A71C16291300C294CE /* bonhomme.png */; };
+		DE928C781C1F5E1A001A18E4 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE928C771C1F5E1A001A18E4 /* GymViewController.swift */; };
+		DE928C7A1C1F68C8001A18E4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE928C791C1F68C8001A18E4 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		DE5A63231C03B8080029A52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5A63241C03B8080029A52D /* DELM0925813_FINALTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELM0925813_FINALTests.swift; sourceTree = "<group>"; };
 		DE6BA0A71C16291300C294CE /* bonhomme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonhomme.png; path = ../image/bonhomme.png; sourceTree = "<group>"; };
+		DE928C771C1F5E1A001A18E4 /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		DE928C791C1F68C8001A18E4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		DE5A630B1C03B8070029A52D /* DELM0925813-FINAL */ = {
 			isa = PBXGroup;
 			children = (
+				DE928C761C1F5DC5001A18E4 /* class */,
 				DE5A630E1C03B8070029A52D /* AppDelegate.swift */,
 				DE5A63101C03B8070029A52D /* ViewController.swift */,
 				DE5A63121C03B8070029A52D /* Main.storyboard */,
@@ -121,6 +126,15 @@
 				DE6BA0A71C16291300C294CE /* bonhomme.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		DE928C761C1F5DC5001A18E4 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				DE928C771C1F5E1A001A18E4 /* GymViewController.swift */,
+				DE928C791C1F68C8001A18E4 /* CollectionViewController.swift */,
+			);
+			name = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE928C7A1C1F68C8001A18E4 /* CollectionViewController.swift in Sources */,
 				DE5A63111C03B8070029A52D /* ViewController.swift in Sources */,
+				DE928C781C1F5E1A001A18E4 /* GymViewController.swift in Sources */,
 				DE5A630F1C03B8070029A52D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
