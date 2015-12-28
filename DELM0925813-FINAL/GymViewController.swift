@@ -24,23 +24,41 @@ class GymViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Voici comment créer un dictionnaire à partir d'un résultat JSON.
+        // ATTENTION, il n'y a aucune validation dans les lignes qui suivent.
+        let leId = "3"
+        
+        // 1 - Créer une instance NSURL à partir d'un lien
+        let adresseURL = "http://madlprog.com/api/?id=\(leId)"
+        let url = NSURL(string: adresseURL)
+        
+        // 2 - Obtenir les données (en format brut 'NSData': des octets sans signature)
+        let data = NSData(contentsOfURL:url!, options: nil, error: nil)
+        
+        // 3 - Convertir les données, du format JSON, vers un Dictionary <String, AnyObject>
+        let resultat = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! Dictionary<String, AnyObject>
+        
+        println(resultat)
+        
+        
+        // Obtenir l'élément à la clé "resultat":
+        let combattant = resultat[leId] as! Dictionary<String, AnyObject>
+        
+        println(combattant)
+
+        //----------------------------------------------------------------------
+        
         //Init des component sur la scène
-        labNom.text = "Charles"
-        labNiv.text = "12"
+        labNom.text = combattant["c_nom"] as? String
+        labNiv.text = "1"
         
-        labFor.text = "7"
-        labAgi.text = "5"
-        labRap.text = "3"
-        
-        let victoire:UInt = 110
-        let defaite:UInt = 1900
-        let ratio:Float = Float(victoire) / Float(defaite)
-        
-        labVic.text = "\(victoire)"
-        labDef.text = "\(defaite)"
+        labFor.text = combattant["c_force"] as? String
+        labAgi.text = combattant["c_agilite"] as? String
+        labRap.text = combattant["c_rapidite"] as? String
+        labVic.text = combattant["c_victoire"] as? String
+        labDef.text = combattant["c_defaite"] as? String
         //labRatio.text = "\(victoire / defaite)"
-        
-        labRatio.text = (NSString(format:"%.2f", ratio) as String)
+        //labRatio.text = (NSString(format:"%.2f", ratio) as String)
     }
 
 }
